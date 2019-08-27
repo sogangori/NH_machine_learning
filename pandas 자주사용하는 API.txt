@@ -1,9 +1,18 @@
-데이터 조작
-읽기 : df = pd.read_csv()
+
+읽기
+df = pd.read_csv()
   - 컬럼이름이 없을때 : (header=None)
   - 인코딩 : (encoding='cp949')
+
+데이터 프레임 구성요소
+df.columns
+df.index
+df.values
+
+데이터 조작
 인덱스 바꾸기 : df.set_index('컬럼명')
 컬럼 이름 바꾸기 : df.columns = ['컬럼0','컬럼1'....]
+새 컬럼 만들기 : df['새컬럼이름'] = 데이터
 데이터 붙이기 : pd.concat((df0, df1, df2))
 데이터 선택하기 : df.loc[인덱스명, 컬럼명]
 데이터 자르기 : df.iloc[행시작:행끝, 컬럼시작:컬럼끝]
@@ -13,10 +22,6 @@
 값 바꾸기 : df.replace()
 데이터 타입 바꾸기 : pd.to_numeric()  df['컬럼'].astype(np.int)
 
-데이터 프레임 구성요소
-df.columns
-df.index
-df.values
 
 정제 
 누락데이터확인 : df.isna()
