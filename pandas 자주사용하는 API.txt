@@ -28,6 +28,7 @@ df.values
 상관관계 : df.corr()
 
 전체 그래프
+그래프 안나타날때 %matplotlib inline
 선그래프 df.plot()
 히스토그램 df.hist()
 박스그래프 df.boxplot()
@@ -42,4 +43,8 @@ df.values
  df['컬럼명'].value_counts().pie()
  df['컬럼명'].value_counts().bar()
  df['컬럼명'].value_counts().barh()
+
+2개의 컬럼간의 관계 그래프
+df.plot(x='컬럼명',y='컬럼명')
+ 점그래프 (kind='scatter') 
 
