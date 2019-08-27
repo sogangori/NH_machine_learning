@@ -11,6 +11,7 @@ df.index
 df.values
 
 데이터 보기
+모양 df.shape
 상단 df.head()
 하단 df.tail()
 랜덤 df.sample()
@@ -35,8 +36,7 @@ df.values
 누락행제거 : df.dropna()
 누락데이터채우기 : df.fillna(0)
 
-분석
-모양 df.shape
+통계 분석 
 누락데이터갯수, 타입 : df.info()
 통계 : df.sum() df.mean() df.min() df.max()
 전체 통계 : df.describe()
