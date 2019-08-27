@@ -18,13 +18,16 @@ df.columns
 df.index
 df.values
 
+정제 
+누락데이터확인 : df.isna()
+누락행제거 : df.dropna()
+누락데이터채우기 : df.fillna(0)
+
 분석
 모양 df.shape
 누락데이터갯수, 타입 : df.info()
 통계 : df.sum() df.mean() df.min() df.max()
 전체 통계 : df.describe()
-누락데이터확인 : df.isna()
-누락행제거 : df.dropna()
 상관관계 : df.corr()
 
 전체 그래프
@@ -47,4 +50,5 @@ df.values
 2개의 컬럼간의 관계 그래프
 df.plot(x='컬럼명',y='컬럼명')
  점그래프 (kind='scatter') 
+ 점크기 조절 (s=df['size']*10)
 
